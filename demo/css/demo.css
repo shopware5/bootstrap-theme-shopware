@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAMAAABJkqEHAAABzlBM…/ori5unj3+sTw6d5U2y5o3os0tbUnD+xItrc16SVNE+hfg3WCF3P9KXoAAAAASUVORK5CYII=") center center no-repeat, linear-gradient(165deg, #c6eaf6 5%, #dff1f6 45%, #daedf5 55%, #abc8ee 100%);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #ccc;
+    background: #F0F2F4;
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -350px;
+}
+
+.window--iframe {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    min-height: 700px;
+}

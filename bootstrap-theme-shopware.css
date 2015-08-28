@@ -1,0 +1,421 @@
+/*!
+ * Bootstrap Theme Shopware
+ *
+ * This theme modifies the default appearance of the bootstrap core theme.
+ * Make sure that you insert it after bootstraps core CSS.
+ */
+
+/* Global styles
+ * =============================================== */
+body {
+    margin: 0;
+    padding: 15px;
+    color: #61677f;
+}
+
+p {
+    color: #61677f;
+}
+
+body.has-navbar-top {
+    padding-top: 60px;
+}
+
+body.has-navbar-bottom {
+    padding-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #475c6a;
+}
+
+code {
+    background: #fff;
+}
+
+/* Fields
+ * =============================================== */
+fieldset {
+    border: 1px solid #d3d8de;
+    margin: 20px 0;
+    padding: 15px;
+    height: auto;
+}
+
+fieldset legend {
+    font-size: 1em;
+    border-bottom: 0 none;
+    padding: 0 10px;
+    width: auto;
+    margin: 0;
+    color: #61677f;
+}
+
+.form-control {
+    border-color: #d3d8de;
+    color: #475c6a;
+}
+
+label {
+    color: #475c6a;
+}
+
+/* Backend button styles
+ * =============================================== */
+.btn {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0 none;
+    color: #475c6a;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+    color: #475c6a;
+}
+
+.btn-default {
+    color: #475c6a;
+    background-color: #f4f7f9;
+    background-image: -ms-linear-gradient(top, #f4f7f9, #ccd8e4);
+    background-image: linear-gradient(to bottom, #f4f7f9 0, #ccd8e4 100%);
+}
+
+.btn-default:hover {
+    color: #475c6a;
+    background-color: #B8CEE7;
+    background-image: -ms-linear-gradient(top, #f4f7f9, #B8CEE7);
+    background-image: linear-gradient(to bottom, #f4f7f9 0, #B8CEE7 100%);
+}
+
+.btn-default:active,
+.btn-default:focus {
+    box-shadow: none;
+    color: #475c6a;
+    background-color: #B8CEE7;
+    background-image: -ms-linear-gradient(top, #92a6bf, #ccd8e4);
+    background-image: linear-gradient(to bottom, #92a6bf 0, #ccd8e4 100%);
+}
+
+.open>.dropdown-toggle.btn-default,
+.open>.dropdown-toggle.btn-default:hover {
+    color: #475c6a;
+    background-color: #B8CEE7;
+    background-image: -ms-linear-gradient(top, #92a6bf, #ccd8e4);
+    background-image: linear-gradient(to bottom, #92a6bf 0, #ccd8e4 100%);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #329bea, #1682d3);
+    background-image: linear-gradient(to bottom, #329bea 0, #1682d3 100%);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #34aafb, #168de1);
+    background-image: linear-gradient(to bottom, #34aafb 0, #168de1 100%);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #1669b2;
+    background-image: -ms-linear-gradient(top, #1669b2, #3180ca);
+    background-image: linear-gradient(to bottom, #1669b2 0, #3180ca 100%);
+}
+
+.open>.dropdown-toggle.btn-primary,
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #1669b2;
+    background-image: -ms-linear-gradient(top, #1669b2, #3180ca);
+    background-image: linear-gradient(to bottom, #1669b2 0, #3180ca 100%);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #9eb1bd, #7f98a9);
+    background-image: linear-gradient(to bottom, #9eb1bd 0, #7f98a9 100%);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #b9cfdb, #829cad);
+    background-image: linear-gradient(to bottom, #b9cfdb 0, #829cad 100%);
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+    color: #fff;
+    box-shadow: none;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #708797, #9eb1bd);
+    background-image: linear-gradient(to bottom, #708797 0, #9eb1bd 100%);
+}
+
+.open>.dropdown-toggle.btn-secondary,
+.open>.dropdown-toggle.btn-secondary:hover {
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #708797, #9eb1bd);
+    background-image: linear-gradient(to bottom, #708797 0, #9eb1bd 100%);
+}
+
+.btn-group .btn {
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.btn-group .btn:first-of-type {
+    border-left: 0 none;
+}
+
+.btn-group .btn+.btn {
+    margin-left: 0;
+}
+
+/* Navbars
+ * =============================================== */
+.navbar {
+    border-color: #b5bfc9;
+    min-height: 40px;
+    color: #61677f;
+}
+
+/* Badges
+ * =============================================== */
+.badge {
+    background-color: #7f98a9;
+}
+
+/* Nav tabs
+ * =============================================== */
+.nav-tabs,
+.nav-tabs.nav-justified {
+    border-bottom: 3px solid #1682d3;
+}
+
+.nav-tabs>li>a {
+    border: 0 none;
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #9eb1bd, #7f98a9);
+    background-image: linear-gradient(to bottom, #9eb1bd 0, #7f98a9 100%);
+    margin-right: 6px;
+}
+
+.nav-tabs>li>a:hover {
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #b9cfdb, #829cad);
+    background-image: linear-gradient(to bottom, #b9cfdb 0, #829cad 100%);
+}
+
+.nav-tabs>li>a:active,
+.nav-tabs>li>a:focus {
+    color: #fff;
+    background-color: #9eb1bd;
+    background-image: -ms-linear-gradient(top, #708797, #9eb1bd);
+    background-image: linear-gradient(to bottom, #708797 0, #9eb1bd 100%);
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus,
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:hover,
+.nav-tabs.nav-justified>.active>a:active,
+.nav-tabs.nav-justified>.active>a:focus {
+    color: #fff;
+    border: 0 none;
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #329bea, #1682d3);
+    background-image: linear-gradient(to bottom, #329bea 0, #1682d3 100%);
+}
+
+.nav-tabs>li {
+    margin-bottom: 0;
+}
+
+.nav-tabs.nav-justified>li>a {
+    background: none;
+    color: #475c6a;
+    border: 0 none;
+}
+
+.nav-tabs.nav-justified>li>a:hover,
+.nav-tabs.nav-justified>li>a:active,
+.nav-tabs.nav-justified>li>a:focus {
+    background-color: #d3d8de;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: 3px;
+    border-top: 0 none;
+}
+
+/* Nav pills
+ * =============================================== */
+.nav-pills>li>a:hover,
+.nav-pills>li>a:active,
+.nav-pills>li>a:focus {
+    background-color: #d3d8de;
+}
+
+.nav-pills>li.active>a {
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #329bea, #1682d3);
+    background-image: linear-gradient(to bottom, #329bea 0, #1682d3 100%);
+}
+
+/* Progress bar
+ * =============================================== */
+.progress {
+    background-color: #d3d8de;
+}
+
+.progress-bar {
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #329bea, #1682d3);
+    background-image: linear-gradient(to bottom, #329bea 0, #1682d3 100%);
+    box-shadow: none;
+}
+
+/* Pagination
+ * =============================================== */
+.pagination>li.active>a,
+.pagination>li.active>a:hover,
+.pagination>li.active>a:active,
+.pagination>li.active>a:focus {
+    background-color: #329bea;
+    background-image: -ms-linear-gradient(top, #329bea, #1682d3);
+    background-image: linear-gradient(to bottom, #329bea 0, #1682d3 100%);
+}
+
+.pagination>li>a,
+.pager>li>a {
+    border: 0 none;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    color: #475c6a;
+    background-color: #f4f7f9;
+    background-image: -ms-linear-gradient(top, #f4f7f9, #ccd8e4);
+    background-image: linear-gradient(to bottom, #f4f7f9 0, #ccd8e4 100%);
+    margin-left: 0;
+}
+
+.pagination>li:first-child>a {
+    border-left: 0 none;
+}
+
+.pagination>li>a:hover,
+.pager>li>a:hover {
+    color: #475c6a;
+    border-color: rgba(0,0,0,0.2);
+    background-color: #B8CEE7;
+    background-image: -ms-linear-gradient(top, #f4f7f9, #B8CEE7);
+    background-image: linear-gradient(to bottom, #f4f7f9 0, #B8CEE7 100%);
+}
+
+.pagination>li>a:active,
+.pager>li>a:active,
+.pagination>li>a:focus,
+.pager>li>a:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.2);
+    color: #475c6a;
+    background-color: #B8CEE7;
+    background-image: -ms-linear-gradient(top, #92a6bf, #ccd8e4);
+    background-image: linear-gradient(to bottom, #92a6bf 0, #ccd8e4 100%);
+}
+
+.pager>li>a { border: none; }
+
+/* Tables
+ * =============================================== */
+.table {
+    border-color: #b5bfc9;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>td,
+.table>tfoot>tr>td {
+    border-color: #b5bfc9;
+}
+
+.table>thead {
+    font-weight: bold;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table-bordered>thead>tr>td {
+    background-color: #d3d8de;
+    background-image: -ms-linear-gradient(top, #fff, #f8f8f8);
+    background-image: linear-gradient(to bottom, #fff 0, #f8f8f8 100%);
+    border-bottom: 0 none;
+}
+
+.table-bordered>tbody>tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Dropdown menus
+ * =============================================== */
+.dropdown-menu {
+    border-color: #b5bfc9;
+}
+
+.dropdown-menu>li>a {
+    color: #475c6a;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #344351;
+}
+
+.dropdown-menu>li.active>a {
+    background-color: #1682d3;
+    color: #fff;
+}
+
+/* Labels
+ * ============================================= */
+.label-default { background-color: #7f98a9; }
+.label-primary { background-color: #1682d3; }
+
+/* Panels
+ * ============================================= */
+.panel {
+    box-shadow: none;
+}
+
+.panel-heading {
+    padding: 8px 15px;
+}
+
+.panel-title {
+    font-size: 1em;
+}
+
+.panel-default .panel-heading {
+    background-color: #d3d8de;
+    background-image: -ms-linear-gradient(top, #fff, #f8f8f8);
+    background-image: linear-gradient(to bottom, #fff 0, #f8f8f8 100%);
+}
+
+.panel-default .panel-title {
+    color: #475C6A;
+}
+
+.panel-default {
+    border-color: #d3d8de;
+}
