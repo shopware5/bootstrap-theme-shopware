@@ -1,4 +1,4 @@
-# Shopware 5 backend theme for bootstrap
+# Backend inspired bootstrap theme
 The new lightweight backend modules give you the ability to use simple HTML and CSS to create your modules layout. If you are using Bootstrap as your frontend framework we recommend our Bootstrap custom theme for proper appearance within the backend.
 
 ## Usage
@@ -22,3 +22,6 @@ To help you get started the main components match the Shopware 5 backend appeara
 
 ## Demo
 You can find an example inside the `demo` directory.
+
+## License
+The code is licensed under MIT, see the `LICENSE-MIT.md` for further information.
